@@ -6,8 +6,7 @@ namespace series_catalog
     {
         static void Main(string[] args)
         {
-            // TO DO: menu de opções
-            Console.WriteLine("...");
+            Menu.Start();
         }
     }
 }

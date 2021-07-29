@@ -30,6 +30,10 @@ namespace series_catalog
             return this.titulo;
         }
 
+        public bool exists() {
+            return this.existe;
+        }
+
         // Apenas marcar o registro como excluído, sem excluir propriamente
         public void excluir() {
             this.existe = false;
@@ -40,7 +44,8 @@ namespace series_catalog
             res += "Gênero: " + this.genero + Environment.NewLine;
             res += "Título: " + this.titulo + Environment.NewLine;
             res += "Descrição: " + this.descricao + Environment.NewLine;
-            res += "Ano de lançamento: " + this.ano;
+            res += "Ano de lançamento: " + this.ano + Environment.NewLine;
+            res += "Na lista? " + (this.existe ? "Sim" : "Não");
             return res;
         }
     }
